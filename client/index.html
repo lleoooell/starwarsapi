@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-<p>hello world</p>
-</body>
+	<head>
+		<title></title>
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper black">
+				<a href="#" class="brand-logo">Star Wars</a>
+				<ul id="nav-mobile" class="right ">
+					<!-- <li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li> -->
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<p>hello world</p>
+			<div id="mainContainer">
+				
+			</div>
+		</div>
+		<script id="movieMain" type="text/x-handlebars-template">
+			<div class="movieItem">
+					<h4>{{Title}}</h4>
+					<img src="{{Poster}}">
+					<p>{{Year}}</p>
+			</div>
+		</script>
+		<script type="text/javascript" src="lib/js/main.js"></script>
+	</body>
 </html>

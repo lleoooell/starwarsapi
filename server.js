@@ -1,4 +1,5 @@
 const express = require('express');
+const seed = require('/config/db/db_seed.js');
 const app = express();
 // CREATE APP CONF
 
