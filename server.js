@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+// CREATE APP CONF
+
+app.use('/lib', express.static(__dirname + '/client/public/'));
 
 // CREATE ROUTES API
 app.get('/', function (req, res) {
